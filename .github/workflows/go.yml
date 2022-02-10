@@ -1,0 +1,27 @@
+name: go-test-app Release
+
+on:
+  push:
+    branches: [main]
+    tags:
+      - "*"
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.17
+
+      - name: Build with ricebox
+        uses: sgkandale/ricebox-action@v0.1
+        with:
+          path-to-main: "./main.go"
+          invoker-package: "main"
+          output-file: "test-app"
