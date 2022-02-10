@@ -22,6 +22,6 @@ jobs:
       - name: Build with ricebox
         uses: sgkandale/ricebox-action@v0.4
         with:
-          path-to-main: "./cmd/test"
+          path-to-main: "./"
           invoker-package: "go_test_app/webserver"
           output-file: "test-app"
