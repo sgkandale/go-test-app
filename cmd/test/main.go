@@ -1,5 +1,7 @@
 package main
 
+import "go_test_app/webServer"
+
 func main() {
-	println("Custom GitHub Action Test")
+	webServer.Server()
 }
