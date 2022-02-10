@@ -23,5 +23,5 @@ jobs:
         uses: sgkandale/ricebox-action@v0.8
         with:
           path-to-main: "./"
-          invoker-package: "go_test_app/webserver"
+          invoker-package: "go_test_app/webServer"
           output-file: "test-app"
