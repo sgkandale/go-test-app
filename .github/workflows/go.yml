@@ -21,7 +21,7 @@ jobs:
 
       - name: Build with ricebox
         uses: sgkandale/ricebox-action@v0.1
-        with:
+        env:
           path-to-main: "./main.go"
           invoker-package: "main"
           output-file: "test-app"
